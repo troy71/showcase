@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f7fa;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+h1,
+h2 {
+    font-family: "Orbitron", sans-serif;
+    color: #394867;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+img {
+    max-width: 250px;
+    max-height: 250px;
+}
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+
+}
+
+li {
+    display: inline-block;
+    margin: 0 40px;
+}
+
+.welcome {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    letter-spacing: 0.25rem;
+}
+
+.about-me {
+    display: flex;
+    justify-content: center;
+    /* Centers horizontally */
+    align-items: center;
+    /* Centers vertically */
+    text-align: center;
+    /* Ensures text alignment is centered */
+    margin-top: 50px;
+    padding: 20px;
+}
+
+.two-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+    /* Optional: Limit the width of the layout */
+    width: 100%;
+    /* Ensure it doesn't exceed the parent width */
+    text-align: left;
+}
+
+.about-me-para {
+    margin-top: 20px;
+    color: hsl(221, 29%, 21%);
+}
+
+.para-middle{
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+h2 {   
+    text-align: center;
+    letter-spacing: 0.2rem;
+}
+
+.profile-pic {
+    border-radius: 40% 60% 40% 60% / 58% 60% 40% 42%;  
+    /* Creates an irregular blob-like shape */
+}
+
+.project-wrapper {
+    display: flex;
+    flex-direction: column;
+    /* Stacks the h2 and .three-column-layout vertically */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.project-wrapper h2 {
+    margin-bottom: 20px;
+    /* Adds spacing between the heading and the grid */
+    font-size: 2rem;
+    /* Optional: Adjust font size */
+    letter-spacing: 0.2rem;
+    /* Optional: Add letter spacing */
+}
+
+
+.three-column-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 1000px;
+    /* Optional: Limit the width of the layout */
+    width: 100%;
+    /* Ensure it doesn't exceed the parent width */
+}
+
+.card {
+    border: 1px solid lab(71.43% 2.33 -6.12);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px  lch(80.24% 0.01 296.81);
+}
+
+.card p{
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #394867;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.card img {
+    width: 250px;
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+
+}
+
+h3 {
+    font-family: "Orbitron", sans-serif;
+    font-size: 1rem;
+    color: #394867;
+    margin-top: 10px;
+}
+
+button{
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #394867;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: #2a2d34;
+    cursor: pointer;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #394867;
+    color: #fff;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .two-column-layout {
+        grid-template-columns: 1fr;
+        /* Stacks the columns on smaller screens */
+    }
+
+    @media screen and (max-width: 768px) {
+        .about-me {
+            flex-direction: column;
+            /* Stacks the image and text vertically */
+            align-items: center;
+            text-align: center;
+            /* Ensures text alignment is centered */
+        }
+
+        .profile-pic {
+            margin-bottom: 20px;
+            display: block;
+            /* Ensures it's treated as a block element */
+            margin-left: auto;
+            /* Centers horizontally */
+            margin-right: auto;
+            /* Centers horizontally */
+        }
+    }
+
+    .about-me-para {
+        margin-top: 0;
+        /* Resets the margin for smaller screens */
+    }
+
+    .project-wrapper {
+        flex-direction: column;
+        /* Stacks the h2 and .three-column-layout vertically */
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        margin-top: 50px;
+    }
+    .project-wrapper h2 {
+        margin-bottom: 20px;
+        /* Adds spacing between the heading and the grid */
+        font-size: 2rem;
+        /* Optional: Adjust font size */
+        letter-spacing: 0.2rem;
+        /* Optional: Add letter spacing */
+       
+    }
+    .three-column-layout {
+        grid-template-columns: 1fr; /* Stacks the cards vertically */
+        gap: 20px; /* Keeps spacing between the cards */
+        padding: 0 20px; /* Adds padding to the left and right */
+        box-sizing: border-box; /* Ensures padding doesn't affect the width */
+    }
+
+    .card {
+        width: 100%; /* Ensures the card takes full width of the container */
+       
+    }
+    .card img {
+        width: 100%;
+        /* Ensures the image takes full width of the card */
+        height: auto;
+        /* Maintains aspect ratio */
+    }
+
+}
