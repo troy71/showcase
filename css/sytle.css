@@ -182,6 +182,30 @@ footer{
     color: #fff;
 }
 
+.ribbon {
+    position: absolute;
+    top: 10px;
+    left: -10px;
+    background: #ff5733; /* Ribbon color */
+    color: white;
+    padding: 5px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    transform: rotate(-45deg); /* Creates angled effect */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+  }
+  
+  .card-new {
+    position: relative;
+    border: 1px solid lab(71.43% 2.33 -6.12);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 5px 5px 5px  lch(80.24% 0.01 296.81);
+    font-family: "Orbitron", sans-serif;
+}
+  
+
 
 
 @media screen and (max-width: 768px) {
