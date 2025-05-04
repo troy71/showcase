@@ -64,12 +64,9 @@ li {
 
 .about-me {
     display: flex;
-    justify-content: center;
-    /* Centers horizontally */
-    align-items: center;
-    /* Centers vertically */
-    text-align: center;
-    /* Ensures text alignment is centered */
+    justify-content: center;    
+    align-items: center;   
+    text-align: center;   
     margin-top: 50px;
     padding: 20px;
 }
@@ -78,10 +75,8 @@ li {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    max-width: 800px;
-    /* Optional: Limit the width of the layout */
-    width: 100%;
-    /* Ensure it doesn't exceed the parent width */
+    max-width: 800px;   
+    width: 100%;   
     text-align: left;
 }
 
@@ -102,14 +97,12 @@ h2 {
 }
 
 .profile-pic {
-    border-radius: 40% 60% 40% 60% / 58% 60% 40% 42%;  
-    /* Creates an irregular blob-like shape */
+    border-radius: 40% 60% 40% 60% / 58% 60% 40% 42%;    
 }
 
 .project-wrapper {
     display: flex;
-    flex-direction: column;
-    /* Stacks the h2 and .three-column-layout vertically */
+    flex-direction: column;    
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -117,12 +110,9 @@ h2 {
 }
 
 .project-wrapper h2 {
-    margin-bottom: 20px;
-    /* Adds spacing between the heading and the grid */
-    font-size: 2rem;
-    /* Optional: Adjust font size */
-    letter-spacing: 0.2rem;
-    /* Optional: Add letter spacing */
+    margin-bottom: 20px;  
+    font-size: 2rem;   
+    letter-spacing: 0.2rem;    
 }
 
 
@@ -130,10 +120,10 @@ h2 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
-    max-width: 1000px;
-    /* Optional: Limit the width of the layout */
+    max-width: 1000px;   
     width: 100%;
-    /* Ensure it doesn't exceed the parent width */
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .card {
@@ -197,67 +187,56 @@ footer{
 @media screen and (max-width: 768px) {
     .two-column-layout {
         grid-template-columns: 1fr;
-        /* Stacks the columns on smaller screens */
+       
     }
 
     @media screen and (max-width: 768px) {
         .about-me {
-            flex-direction: column;
-            /* Stacks the image and text vertically */
+            flex-direction: column;           
             align-items: center;
-            text-align: center;
-            /* Ensures text alignment is centered */
+            text-align: center;            
         }
 
         .profile-pic {
             margin-bottom: 20px;
-            display: block;
-            /* Ensures it's treated as a block element */
-            margin-left: auto;
-            /* Centers horizontally */
-            margin-right: auto;
-            /* Centers horizontally */
+            display: block;            
+            margin-left: auto;          
+            margin-right: auto;           
         }
     }
 
     .about-me-para {
-        margin-top: 0;
-        /* Resets the margin for smaller screens */
+        margin-top: 0;       
     }
 
     .project-wrapper {
-        flex-direction: column;
-        /* Stacks the h2 and .three-column-layout vertically */
+        flex-direction: column;       
         justify-content: center;
         align-items: center;
         text-align: center;
         margin-top: 50px;
     }
     .project-wrapper h2 {
-        margin-bottom: 20px;
-        /* Adds spacing between the heading and the grid */
-        font-size: 2rem;
-        /* Optional: Adjust font size */
+        margin-bottom: 20px;        
+        font-size: 2rem;       
         letter-spacing: 0.2rem;
-        /* Optional: Add letter spacing */
-       
+        
     }
     .three-column-layout {
-        grid-template-columns: 1fr; /* Stacks the cards vertically */
-        gap: 20px; /* Keeps spacing between the cards */
-        padding: 0 20px; /* Adds padding to the left and right */
-        box-sizing: border-box; /* Ensures padding doesn't affect the width */
+        grid-template-columns: 1fr; 
+        gap: 20px; 
+        padding: 0 20px; 
+        box-sizing: border-box; 
     }
 
     .card {
-        width: 100%; /* Ensures the card takes full width of the container */
+        width: 100%; 
        
     }
     .card img {
-        width: 100%;
-        /* Ensures the image takes full width of the card */
+        width: 100%;       
         height: auto;
-        /* Maintains aspect ratio */
+        
     }
 
 }
