@@ -2,125 +2,372 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/jpg" sizes="32x32" href="./images/troy71-logo.jpg">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./css/sytle.css">
-    <title>troy71</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="test.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+		rel="stylesheet">
+
+	<script src="https://kit.fontawesome.com/16ada5b742.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="style.css">
+	<title>Sports energy drink</title>
 </head>
 
-
 <body>
-    <div class="wrapper">
 
-        <header>
-            <img src="./images/troy71-logo.jpg" alt="troy71" class="logo">
-        </header>
+	<div class="main-container">
 
-        <section class="welcome">
-            <h1>Welcome to my GitHub profile!</h1>
-        </section>
+		<!-- **********Nav bar********** -->
+		<header>
+			<nav class="nav-bar">
+				<button class="hamburger-menu" aria-label="Toggle navigation">
+					<i class="fa fa-bars"></i>
+				</button>
+				<ul class="nav-links">
+					<li><a href="#intro">Products</a></li>
+					<li><a href="#why-choose">Features</a></li>
+					<li><a href="#contact-container">Contact</a></li>
+				</ul>
+				<button class="cta-btn">Shop Now</button>
+			</nav>
+		</header>
 
-        <section class="about-me">
-            <div class="two-column-layout ">
-                <div>
-                    <h2>About Me</h2>
-                    <p class="about-me-para">Hi there! I'm Nick, and I absolutely love building websites or at least
-                        'components' of a website — it’s my favorite creative hobby.</p>
-                    <p class="para-middle">There’s nothing more fun than experimenting with cool designs coding in HTML,
-                        CSS.</p>
-                    <p>Check out some of my projects below.</p>
-                    </p>
-                </div>
-                <img src="./images/troy71.jpg"
-                    alt="Nick in a red and black jacket standing on a beach, with the ocean waves and a clear sky visible behind me."
-                    class="profile-pic">
-            </div>
-        </section>
+		<!-- **********Hero image********** -->
+		<div class="hero-image">
+			<div class="header-container">
+				<h1 class="hero-text">
+					<span class="span-h1">UNLEASH YOUR</span>
+					<span class="span-color">MAXIMUM POTENTIAL</span>
+				</h1>
+				<p class="hero-para">Scientifically formulated to enhance performance, boost energy, and accelerate
+					recovery. The ultimate
+					hydration solution for athletes who demand more.</p>
+				<button class="cta-btn">Explore Products</button>
+				<button class="cta-btn contact-btn">Contact Us</button>
+			</div>
+		</div>
+	</div>
 
-        <section class="project-wrapper">
-            <h2>My Projects</h2>
-            <div class="three-column-layout">
+	<!-- **********Product section********** -->
+	<section id="intro">
+		<h2 class="product-line">Premium Energy <span class="span-color">Product Line</span></h2>
+		<p class="intro-para">Discover our range of performance-enhancing drinks designed for athletes and active
+			individuals who demand the best.</p>
+	</section>
 
-                <div class=" card card-new">
-                    <span class="ribbon">NEW</span>
-                    <img src="./images/sports-energy-drink.jpeg"
-                        alt="Landing page for a fictitious sports energy drink, featuring vibrant colors and dynamic design elements">
+	<div class="feature-card-container">
 
-                    <h3>Landing Page</h3>
-                    <p>A landing page for a fictitious sports energy drink.</p>
-                    <a href="https://troy71.github.io/Sports-Energy-Drink/" target="_blank"><button>Click to view
-                        </button></a>
-                </div>
-                
+		<div class="card">
+			<img src="./images/orange-drink.jpg" alt="Sparkling water 1">
+			<div class="card-info">
+				<h3>Blaze Burst</h3>
+				<p class="feature-para">Ignite your senses with the fiery zest of tangy orange, delivering an
+					explosive
+					citrus kick to keep you fueled and ready.</p>
+				<div class="card-price">
+					<p class="price">£2.25</p>
+					<button class="cta-btn card-btn">Learn more</button>
+				</div>
+			</div>
+		</div>
 
-                <div class="card">
-                    <img src="./images/blog-style-card.jpg"
-                        alt="A visual representation of HTML and CSS fundamentals, highlighting key coding principles and design structures for beginners">
-                    <h3>Blog Card</h3>
-                    <p>A blog styled card with rollover effect.</p>
-                    <a href="https://troy71.github.io/blog-preview-card/" target="_blank"><button>Click to
-                            view</button></a>
-                </div>
+		<div class="card">
+			<img src="./images/melon-drink.jpg" alt="Sparkling water 2">
+			<div class="card-info">
+				<h3>Melon Momentum</h3>
+				<p class="feature-para">Smooth and refreshing, this melon-powered drink energizes your stride
+					with
+					its
+					subtle
+					sweetness and juicy punch.</p>
+				<div class="card-price">
+					<p class="price">£2.25</p>
+					<button class="cta-btn card-btn">Learn more</button>
+				</div>
+			</div>
+		</div>
 
-                <div class="card">
-                    <img src="./images/footer-screenshot.jpg"
-                        alt="A colorful square design featuring red, yellow, blue, and white, with a prominent red square">
-                    <h3>Footer Example</h3>
-                    <p>An example of two simple footers with a contact form or map.</form>
-                    </p>
-                    <a href="https://troy71.github.io/simple-footer/" target="_blank"> <button>Click to
-                            view</button></a>
-                </div>
-            </div>
+		<div class="card">
+			<img src="./images/starwberry-drink.jpg" alt="Sparkling water 2">
+			<div class="card-info">
+				<h3>Berry Blitz</h3>
+				<p class="feature-para">Bursting with strawberry flavor, this bold and vibrant
+					explosion of berry goodness recharges you with every sip.</p>
+				<div class="card-price">
+					<p class="price">£2.25</p>
+					<button class="cta-btn card-btn">Learn more</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-            <!--**********second card container**********-->
-            <div class="three-column-layout">
-                <div class="card">
-                    <img src="./images/qr-screenshot.jpg"
-                        alt="QR code displayed for accessing the frontend of a website or application">
+	<div class="feature-card-container card-container-margin">
+		<div class="card">
+			<img src="./images/still-two.jpg" alt="Sparkling water 1">
+			<div class="card-info">
+				<h3>Blaze Burst</h3>
+				<p class="feature-para">Ignite your senses with the fiery zest of tangy orange, delivering an
+					explosive
+					citrus kick to keep you fueled and ready.</p>
+				<div class="card-price">
+					<p class="price">£2.25</p>
+					<button class="cta-btn card-btn">Learn more</button>
+				</div>
+			</div>
+		</div>
 
-                    <h3>QR Code Component</h3>
-                    <p>A simple styled QR card code component.</p>
-                    <a href="https://troy71.github.io/QR-code-component/" target="_blank"><button>Click to view
-                        </button></a>
-                </div>
+		<div class="card">
+			<img src="./images/still-one.jpg" alt="Sparkling water 2">
+			<div class="card-info">
+				<h3>Melon Momentum</h3>
+				<p class="feature-para">Smooth and refreshing, this melon-powered drink energizes your stride
+					with
+					its
+					subtle
+					sweetness and juicy punch.</p>
+				<div class="card-price">
+					<p class="price">£2.25</p>
+					<button class="cta-btn card-btn">Learn more</button>
+				</div>
+			</div>
+		</div>
 
-             <!--   
+		<div class="card">
+			<img src="./images/still-three.jpg" alt="Sparkling water 2">
+			<div class="card-info">
+				<h3>Berry Blitz</h3>
+				<p class="feature-para">Bursting with strawberry flavor, this bold and vibrant
+					explosion of berry goodness recharges you with every sip.</p>
+				<div class="card-price">
+					<p class="price">£2.25</p>
+					<button class="cta-btn card-btn">Learn more</button>
+				</div>
+			</div>
+		</div>
+	</div>
 
-                <div class="card">
-                    <img src="./images/blog-style-card.jpg"
-                        alt="A visual representation of HTML and CSS fundamentals, highlighting key coding principles and design structures for beginners">
-                    <h3>Blog Card</h3>
-                    <p>A blog styled card with rollover effect.</p>
-                    <a href="https://troy71.github.io/blog-preview-card/" target="_blank"><button>Click to
-                            view</button></a>
-                </div>
+	<div class="cta">
+		<button class="cta-btn">Shop Now</button>
+	</div>
 
-                <div class="card">
-                    <img src="./images/footer-screenshot.jpg"
-                        alt="A colorful square design featuring red, yellow, blue, and white, with a prominent red square">
-                    <h3>Footer Example</h3>
-                    <p>An example of a simple footers with a contact form.</form>
-                    </p>
-                    <a href="https://troy71.github.io/simple-footer/" target="_blank"> <button>Click to
-                            view</button></a>
-                </div>
-            </div>
--->
-        </section>
+	<!-- **********Why choose********** -->
+	<div class="why-choose-container">
+		<section id="why-choose">
+			<h2 class="product-line">Why Choose <span class="span-color">Troy71</span></h2>
+			<p class="intro-para">Our scientifically formulated drinks are designed to your performance and
+				recovery.</p>
+		</section>
+
+		<div class="feature-card-container">
+
+			<div class="card why-card">
+				<i class="fa-solid fa-heart-pulse"></i>
+				<div class="card-info">
+					<h3>Instant Energy</h3>
+					<p class="feature-para">Our proprietary blend of natural caffeine and B-vitamins provides immediate
+						energy that lasts for hours without the crash.</p>
+
+				</div>
+			</div>
+
+			<div class="card why-card">
+				<i class="fa-solid fa-vial"></i>
+				<div class="card-info">
+					<h3>Enhanced Recovery</h3>
+					<p class="feature-para">Formulated with BCAAs and electrolytes to accelerate muscle recovery and
+						reduce soreness after intense workouts.</p>
+
+				</div>
+			</div>
+
+			<div class="card why-card">
+				<i class="fa-solid fa-vial"></i>
+				<div class="card-info">
+					<h3>Science-Backed</h3>
+					<p class="feature-para">Expertly developed by sports nutritionists and rigorously tested by
+						professional athletes to ensure optimal performance </p>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- **********Trusted********** -->
+	<div class="trusted-container">
+		<section id="trusted">
+			<h2 class="product-line"Trusted by"<span class="span-color"> Elite Athletes</span></h2>
+			<p class="intro-para">Our scientifically formulated drinks are designed to your performance and
+				recovery.</p>
+		</section>
+
+		<div class="feature-card-container">
+
+			<div class="card why-card">
+				<div class="names">
+					<h2 class="trusted-h2">MJ</h2>
+					<div class="id">
+						<p>Michael Johnson</p>
+						<p class="trusted-para">Professional Triathlete</p>
+					</div>
+				</div>
+				<div class="card-info">
+					<h3>Instant Energy</h3>
+					<p class="feature-para">"Troy71 has been a game-changer for my training regimen. The sustained
+						energy helps me push through the toughest workouts without the crash I experienced with other
+						brands."</p>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
 
 
-        <footer>
-            <p>&copy; 2025 troy71. All rights reserved.</p>
-        </footer>
+				</div>
+			</div>
 
-    </div>
+			<div class="card why-card">
+				<div class="names">
+					<h2 class="trusted-h2">SM</h2>
+					<div class="id">
+						<p>Samantha Rodriguez</p>
+						<p class="trusted-para">Olympic Swimmer</p>
+					</div>
+				</div>
+				<div class="card-info">
+					<h3>Instant Energy</h3>
+					<p class="feature-para">"The Troy71 formula keeps me perfectly hydrated during long training
+						sessions. The electrolyte balance is perfect, and it's not overly sweet like other sports
+						drinks."</p>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+					<i class="fa-solid fa-star"></i>
+
+				</div>
+			</div>
+
+			<div class="card why-card">
+				<div class="names">
+					<h2 class="trusted-h2">DT</h2>
+					<div class="id">
+						<p>David Thompson</p>
+						<p class="trusted-para">CrossFit Champion</p>
+					</div>
+				</div>
+				<div class="card-info">
+					<h3>Instant Energy</h3>
+					<p class="feature-para">"Troy71 is my secret weapon for competition days. The focus and energy I get
+						is unmatched, and the recovery benefits help me bounce back faster between events."</p>
+				</div>
+
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+				<i class="fa-solid fa-star"></i>
+
+			</div>
+		</div>
+	</div>
+
+	<!-- **********Contact form********** -->
+	<div id="contact-container">
+
+		<div class="contact-header">
+			<section id="contact">
+				<h2 class="product-line" id="contact-h2">Get in <span class="span-color">Touch</span></h2>
+				<p class="intro-para">Have questions about our products or want to become a distributor? <br>Send us a
+					message.</p>
+			</section>
+		</div>
+
+		<div class="contact-form">
+			<form>
+
+
+				<label for="name">Your Name</label>
+				<input type="text" id="name" name="name" required placeholder="Full Name">
+
+
+				<label for="email">Email Address</label>
+				<input type="email" id="email" name="email" required placeholder="your.email@example.com">
+
+
+
+				<label for="phone">Telephone Number (Optional)</label>
+				<input type="tel" id="phone" name="phone" required placeholder="+44 1234 567890">
+
+
+
+				<label for="message">Message</label>
+				<textarea id="message" name="message" rows="4" required
+					placeholder="Tell Us How We Can Help You..."></textarea>					
+				<button type="submit" class="cta-btn send-btn">Send Message</button>
+
+				
+			</form>
+		</div>
+
+	</div>
+
+	<footer>
+		<div class="footer-container">
+
+			<div class="troy71">
+				<h4 class="footer-h4">Troy71</h4>
+				<p>Troy71 sports energy drinks scientifically formulated for peak performance.</p>
+				<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+				<a href="#"><i class="fa-brands fa-instagram"></i></a>
+				<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+				<a href="#"><i class="fa-brands fa-linkedin"></i></a>
+			</div>
+
+			<div class="quick-links">
+				<h4 class="footer-h4">Quick Links</h4>
+				<ul>
+					<li>Home</li>
+					<li>Products</li>
+					<li>Features</li>
+					<li>Contact</li>
+					<li>About Us</li>
+				</ul>
+			</div>
+
+			<div class="support">
+				<h4 class="footer-h4">Support</h4>
+				<ul>
+					<li>FAQs</li>
+					<li>Shipping Policy</li>
+					<li>Returns & Refunds</li>
+					<li>Privacy Policy</li>
+					<li>Terms of Service</li>
+				</ul>
+			</div>
+
+			<div class="newsletter">
+				<h4 class="footer-h4">Newsletter</h4>
+				<p>Subscribe to get special offers, free giveaways, and product launches.</p>
+				<form class="footer-form">
+					<input type="email" placeholder="Enter your email" required class="footer-input">
+					<button type="submit" class="cta-btn subscribe.btn">Subscribe</button>
+				</form>
+
+			</div>
+
+
+
+		</div>
+
+		<div class="copyright">
+			<p>© 2025 Troy71. All rights reserved.</p>
+		</div>
+	</footer>
+
+
+	<script src="script.js"></script>
 
 </body>
 
